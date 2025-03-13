@@ -1,0 +1,261 @@
+body {
+  background: #f5f5ed;
+  margin-top: 4rem;
+  height: 100vh;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav .bars {
+  display: none;
+}
+.nav #nike {
+  width: 100px;
+}
+.nav .links {
+  display: flex;
+  gap: 3rem;
+  font-family: poppins;
+  font-weight: 600;
+}
+.nav .links a {
+  color: #2f2e2c;
+  text-decoration: none;
+}
+.nav .carts {
+  display: flex;
+  gap: 2rem;
+}
+.nav .carts .search {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 50px 10px 10px;
+  gap: 7px;
+  border-radius: 20px;
+}
+.nav .carts .search #s {
+  font-family: poppins;
+  color: grey;
+  font-weight: 400;
+}
+.nav .carts .cart {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav .carts .cart img {
+  width: 20px;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .images {
+  display: flex;
+  gap: 1rem;
+}
+.content .images #just {
+  height: 180px;
+  position: relative;
+  top: 133px;
+  left: 50px;
+}
+.content .images #text {
+  font-family: poppins;
+  font-size: 295px;
+  font-weight: 500;
+  color: #e6e6d6;
+  position: absolute;
+  left: 160px;
+
+  z-index: -1;
+}
+.content .images #shoe {
+  width: 700px;
+  position: relative;
+  bottom: 20px;
+  height: 480px;
+  left: 20px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.text #nike {
+  font-family: poppins;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+}
+.text #tex {
+  font-family: poppins;
+  font-weight: 300;
+  font-size: 12px;
+}
+.text .select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.text .select #sel {
+  font-family: poppins;
+  font-size: 13px;
+  font-weight: 400;
+}
+.text .select .size {
+  display: flex;
+  gap: 0.5rem;
+}
+.text .select .size #uk {
+  border: 1px solid grey;
+  padding: 5px 7px;
+  font-size: 12px;
+  font-family: poppins;
+  font-weight: 600;
+}
+.text #ita {
+  font-family: poppins;
+  font-size: 17px;
+  font-weight: 700;
+}
+.text .cart {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.text .cart #add {
+  background-color: #2f2e2c;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 10px;
+  color: white;
+  font-family: poppins;
+}
+.text .cart img {
+  width: 20px;
+}
+.nike {
+  position: relative;
+}
+.nike img {
+  position: relative;
+  width: 500px;
+
+  left: 650px;
+}
+@media only screen and (max-width: 480px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  .project .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav #nike {
+    position: relative;
+    right: 120px;
+    bottom: 40px;
+    width: 90px;
+  }
+  .nav .links {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 25px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .images {
+    width: 100vw;
+  }
+  .content .images #text {
+    font-size: 160px;
+    left: 37px;
+  }
+  .content .images #just {
+    height: 140px;
+    top: 50px;
+    left: 15px;
+  }
+  .content .images #shoe {
+    width: 550px;
+    height: 300px;
+    left: 10px;
+  }
+  .content .text {
+    gap: 2rem;
+  }
+  .nike {
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+  .nike img {
+    width: 260px;
+    left: 80px;
+    padding-top: 4rem;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 850px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .images #text {
+    left: 80px;
+  }
+  .content .text {
+    gap: 2.5rem;
+    position: relative;
+    right: 100px;
+  }
+  .content .text #nike {
+    font-size: 50px;
+  }
+  .content .text #tex {
+    font-size: 20px;
+  }
+  .content .text .select #sel {
+    font-size: 30px;
+  }
+  .content .text .select .size #uk {
+    border: 1px solid grey;
+    padding: 7px 9px;
+    font-size: 16px;
+  }
+  .content .text #ita {
+    font-size: 25px;
+  }
+  .content .text .cart {
+    gap: 2rem;
+  }
+
+  .content .text .cart #add {
+    padding: 15px 30px;
+    border-radius: 33px;
+    font-size: 20px;
+  }
+  .content .text .cart img {
+    width: 40px;
+  }
+  .nike {
+    margin-bottom: 9rem;
+  }
+  .nike img {
+    width: 300px;
+    left: 350px;
+    top: 3rem;
+  }
+}
