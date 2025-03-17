@@ -150,13 +150,14 @@ body {
 .nike img {
   position: relative;
   width: 500px;
-
+bottom: 3rem;
   left: 650px;
 }
 @media only screen and (max-width: 480px) {
   .project {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
   .project .nav {
     display: flex;
@@ -174,6 +175,19 @@ body {
     flex-direction: column;
     position: relative;
     bottom: 25px;
+  }
+  .nav .bars {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  .nav .bars .icon {
+    font-size: 1.5rem;
+    color: rgb(17, 11, 11);
+  }
+  .nav .bars .close {
+    display: none;
   }
   .content {
     display: flex;
@@ -204,9 +218,10 @@ body {
     margin-bottom: 5rem;
   }
   .nike img {
-    width: 260px;
-    left: 80px;
+    width: 200px;
+    left: 9rem;
     padding-top: 4rem;
+    top: -1rem;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 850px) {
