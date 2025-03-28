@@ -150,7 +150,7 @@ body {
 .nike img {
   position: relative;
   width: 500px;
-bottom: 3rem;
+  bottom: 3rem;
   left: 650px;
 }
 @media only screen and (max-width: 480px) {
@@ -175,6 +175,7 @@ bottom: 3rem;
     flex-direction: column;
     position: relative;
     bottom: 25px;
+    display: none;
   }
   .nav .bars {
     display: block;
@@ -182,12 +183,13 @@ bottom: 3rem;
     top: 1.5rem;
     right: 1.5rem;
   }
-  .nav .bars .icon {
-    font-size: 1.5rem;
+  .nav .bars .open {
+    font-size: 2rem;
     color: rgb(17, 11, 11);
   }
   .nav .bars .close {
     display: none;
+    font-size: 2rem;
   }
   .content {
     display: flex;
